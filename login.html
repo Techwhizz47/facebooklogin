@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+    <div id="loginpage">
+        <div id="intro">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share<br>with the people in your life</p>
+        </div>
+        <div id="loginbar">
+            <input type="text" placeholder="Email address or phone number" id="email">
+            <div id="pass1">
+                <input type="text" placeholder="Password" id="pass">
+                <img src="" alt="" id="eye" onmousedown="ona(hii)" onmouseup="ficha(hii)">
+            </div>
+            <button id="login">Log in</button>
+            <h5>Forgotten password?</h5>
+            <button id="acc" onclick="next()">Create new account</button>
+        </div>
+    </div>    
+
+    <script>
+        let hii = document.getElementById('pass');
+        document.getElementById('eye').src = '/view.png'
+        function ona(hii){
+            hii.type = 'text';
+            document.getElementById('eye').src = '/view.png'
+        }
+        function ficha(hii){
+            hii.type = 'password';
+            document.getElementById('eye').src = '/hide.png';
+    }
+
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/login.js" ></script>
+    
+</body>
+</html>

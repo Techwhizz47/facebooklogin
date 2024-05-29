@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
@@ -13,15 +14,14 @@
             <h1>facebook</h1>
             <p>Facebook helps you connect and share<br>with the people in your life</p>
         </div>
-        <div id="loginbar">
+        <div id="loginbar2">
+            <input type="text" placeholder="Full Name" id="name">
             <input type="text" placeholder="Email address or phone number" id="email">
             <div id="pass1">
                 <input type="text" placeholder="Password" id="pass">
                 <img src="" alt="" id="eye" onmousedown="ona(hii)" onmouseup="ficha(hii)">
             </div>
-            <button id="login">Log in</button>
-            <h5>Forgotten password?</h5>
-            <button id="acc">Create new account</button>
+            <button id="login">Sign Up</button>
         </div>
     </div>    
 
@@ -37,5 +37,11 @@
             document.getElementById('eye').src = '/hide.png';
         }
     </script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/signup.js" ></script>
 </body>
 </html>
